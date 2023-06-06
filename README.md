@@ -8,9 +8,13 @@ API de Consulta de Datos - Código y Guía de Uso
 Este repositorio contiene código en Python que permite la consulta a los cuatro endpoints de la página de Presupuesto Abierto de Argentina (https://www.presupuestoabierto.gob.ar/sici/home) a través de una API y guardar los resultados en archivos CSV. El código utiliza las siguientes bibliotecas:
 
 •	requests: Permite enviar solicitudes HTTP y obtener respuestas de servidores web. Se utiliza para realizar solicitudes a la API y obtener los datos en formato CSV.
+
 •	json: Proporciona funciones para trabajar con datos en formato JSON. Se utiliza para codificar los datos de la solicitud en formato JSON.
+
 •	pandas: Una biblioteca ampliamente utilizada para el análisis de datos en Python. Proporciona estructuras de datos flexibles y eficientes, así como herramientas para manipular y analizar datos. Se utiliza para convertir los datos CSV en una tabla y realizar operaciones de análisis de datos.
+
 •	io: Proporciona herramientas para trabajar con flujos de entrada/salida (I/O). Se utiliza para convertir la cadena CSV en un objeto de archivo que pandas pueda leer.
+
 •	tabulate: Se utiliza para visualizar los datos como si fueran una tabla de Excel, combinado con la biblioteca pandas.
 
 Cómo utilizar el código
@@ -25,8 +29,11 @@ Cómo utilizar el código
 Configuración de la consulta
 El código está preconfigurado para realizar las siguientes consultas:
 •	Tabla "Credito": Consulta datos relacionados con los créditos presupuestarios.
+
 •	Tabla "Recurso": Consulta datos relacionados con los recursos financieros.
+
 •	Tabla "Programación y Ejecución Fisica": Consulta datos sobre la programación y ejecución física.
+
 •	Tabla "Transversal Financiero": Consulta datos transversales financieros.
 
 Puedes personalizar la configuración modificando las variables correspondientes en el archivo ‘consulta_api.py’. Asegúrate de proporcionar los valores correctos para las URL de la API y los parámetros de consulta según tus necesidades. Se adjunta archivo Excel "API - Presupuesto Abierto" donde se encuentran las descripciones de todas las columnas y las relaciones existentes entre los endpoints.
